@@ -21,13 +21,13 @@ axios.get("https://lambda-times-api.herokuapp.com/topics")
     console.log(response);
 })
 .catch((error) => {
-    console.log(error)
+    console.log(error);
 });
 
 
 function tabCreator(tabName) {
-const divTopic = document.createElement('div');
-divTopic.classList.add('tab');
-divTopic.textContent = tabName;
-return divTopic;
+const tabDiv = document.createElement('div');
+tabDiv.classList.add('tab');
+tabDiv.textContent = tabName;
+return tabDiv;
 }
